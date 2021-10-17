@@ -1,0 +1,113 @@
+# dune utop
+# OCAMLPARAM: unset
+# Workspace root: /Users/armando/cmsc330fall21/discussions/disc4
+$ /usr/bin/getconf _NPROCESSORS_ONLN > /var/folders/md/5bgcd8j55bs_tr6yczjg0dkc0000gn/T/dunee041f1.output 2> /dev/null
+# Auto-detected concurrency: 4
+# disable binary cache
+$ /Users/armando/.opam/4.11.0/bin/ocamlc.opt -config > /var/folders/md/5bgcd8j55bs_tr6yczjg0dkc0000gn/T/dune9b478a.output
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dyn
+#  ; merlin = true
+#  ; for_host = None
+#  ; fdo_target_exe = None
+#  ; build_dir = "default"
+#  ; toplevel_path = Some External "/Users/armando/.opam/4.11.0/lib/toplevel"
+#  ; ocaml_bin = External "/Users/armando/.opam/4.11.0/bin"
+#  ; ocaml = Ok External "/Users/armando/.opam/4.11.0/bin/ocaml"
+#  ; ocamlc = External "/Users/armando/.opam/4.11.0/bin/ocamlc.opt"
+#  ; ocamlopt = Ok External "/Users/armando/.opam/4.11.0/bin/ocamlopt.opt"
+#  ; ocamldep = Ok External "/Users/armando/.opam/4.11.0/bin/ocamldep.opt"
+#  ; ocamlmklib = Ok External "/Users/armando/.opam/4.11.0/bin/ocamlmklib.opt"
+#  ; env =
+#      map
+#        { "DUNE_OCAML_HARDCODED" : "/Users/armando/.opam/4.11.0/lib"
+#        ; "DUNE_OCAML_STDLIB" : "/Users/armando/.opam/4.11.0/lib/ocaml"
+#        ; "DUNE_SOURCEROOT" : "/Users/armando/cmsc330fall21/discussions/disc4"
+#        ; "INSIDE_DUNE" :
+#            "/Users/armando/cmsc330fall21/discussions/disc4/_build/default"
+#        ; "MANPATH" :
+#            "/Users/armando/cmsc330fall21/discussions/disc4/_build/install/default/bin"
+#        ; "OCAMLFIND_IGNORE_DUPS_IN" :
+#            "/Users/armando/cmsc330fall21/discussions/disc4/_build/install/default/lib"
+#        ; "OCAMLPATH" :
+#            "/Users/armando/cmsc330fall21/discussions/disc4/_build/install/default/lib"
+#        ; "OCAMLTOP_INCLUDE_PATH" :
+#            "/Users/armando/cmsc330fall21/discussions/disc4/_build/install/default/lib/toplevel"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; findlib_path = [ External "/Users/armando/.opam/4.11.0/lib" ]
+#  ; arch_sixtyfour = true
+#  ; natdynlink_supported = true
+#  ; supports_shared_libraries = true
+#  ; ocaml_config =
+#      { version = "4.11.0"
+#      ; standard_library_default = "/Users/armando/.opam/4.11.0/lib/ocaml"
+#      ; standard_library = "/Users/armando/.opam/4.11.0/lib/ocaml"
+#      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
+#      ; ccomp_type = "cc"
+#      ; c_compiler = "cc"
+#      ; ocamlc_cflags = [ "-O2"; "-fno-strict-aliasing"; "-fwrapv" ]
+#      ; ocamlc_cppflags = [ "-D_FILE_OFFSET_BITS=64"; "-D_REENTRANT" ]
+#      ; ocamlopt_cflags = [ "-O2"; "-fno-strict-aliasing"; "-fwrapv" ]
+#      ; ocamlopt_cppflags = [ "-D_FILE_OFFSET_BITS=64"; "-D_REENTRANT" ]
+#      ; bytecomp_c_compiler =
+#          [ "cc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ; "-D_REENTRANT"
+#          ]
+#      ; bytecomp_c_libraries = [ "-lm"; "-lpthread" ]
+#      ; native_c_compiler =
+#          [ "cc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ; "-D_REENTRANT"
+#          ]
+#      ; native_c_libraries = [ "-lm" ]
+#      ; cc_profile = []
+#      ; architecture = "amd64"
+#      ; model = "default"
+#      ; int_size = 63
+#      ; word_size = 64
+#      ; system = "macosx"
+#      ; asm = [ "clang"; "-arch"; "x86_64"; "-Wno-trigraphs"; "-c" ]
+#      ; asm_cfi_supported = true
+#      ; with_frame_pointers = false
+#      ; ext_exe = ""
+#      ; ext_obj = ".o"
+#      ; ext_asm = ".s"
+#      ; ext_lib = ".a"
+#      ; ext_dll = ".so"
+#      ; os_type = "Unix"
+#      ; default_executable_name = "a.out"
+#      ; systhread_supported = true
+#      ; host = "x86_64-apple-darwin20.5.0"
+#      ; target = "x86_64-apple-darwin20.5.0"
+#      ; profiling = false
+#      ; flambda = false
+#      ; spacetime = false
+#      ; safe_string = true
+#      ; exec_magic_number = "Caml1999X028"
+#      ; cmi_magic_number = "Caml1999I028"
+#      ; cmo_magic_number = "Caml1999O028"
+#      ; cma_magic_number = "Caml1999A028"
+#      ; cmx_magic_number = "Caml1999Y028"
+#      ; cmxa_magic_number = "Caml1999Z028"
+#      ; ast_impl_magic_number = "Caml1999M028"
+#      ; ast_intf_magic_number = "Caml1999N028"
+#      ; cmxs_magic_number = "Caml1999D028"
+#      ; cmt_magic_number = "Caml1999T028"
+#      ; natdynlink_supported = true
+#      ; supports_shared_libraries = true
+#      ; windows_unicode = false
+#      }
+#  }
+$ (cd _build/default && /Users/armando/.opam/4.11.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -24 -g -bin-annot -I .utop/.utop.eobjs/byte -I /Users/armando/.opam/4.11.0/lib/bytes -I /Users/armando/.opam/4.11.0/lib/camomile -I /Users/armando/.opam/4.11.0/lib/camomile/default_config -I /Users/armando/.opam/4.11.0/lib/camomile/dyn -I /Users/armando/.opam/4.11.0/lib/camomile/lib_default -I /Users/armando/.opam/4.11.0/lib/camomile/library -I /Users/armando/.opam/4.11.0/lib/charInfo_width -I /Users/armando/.opam/4.11.0/lib/findlib -I /Users/armando/.opam/4.11.0/lib/lambda-term -I /Users/armando/.opam/4.11.0/lib/lwt -I /Users/armando/.opam/4.11.0/lib/lwt/unix -I /Users/armando/.opam/4.11.0/lib/lwt_log -I /Users/armando/.opam/4.11.0/lib/lwt_log/core -I /Users/armando/.opam/4.11.0/lib/lwt_react -I /Users/armando/.opam/4.11.0/lib/mew -I /Users/armando/.opam/4.11.0/lib/mew_vi -I /Users/armando/.opam/4.11.0/lib/mmap -I /Users/armando/.opam/4.11.0/lib/ocaml/compiler-libs -I /Users/armando/.opam/4.11.0/lib/ocaml/threads -I /Users/armando/.opam/4.11.0/lib/ocplib-endian -I /Users/armando/.opam/4.11.0/lib/ocplib-endian/bigstring -I /Users/armando/.opam/4.11.0/lib/react -I /Users/armando/.opam/4.11.0/lib/result -I /Users/armando/.opam/4.11.0/lib/seq -I /Users/armando/.opam/4.11.0/lib/trie -I /Users/armando/.opam/4.11.0/lib/utop -I /Users/armando/.opam/4.11.0/lib/zed -I src/.disc4.objs/byte -no-alias-deps -o .utop/.utop.eobjs/byte/dune__exe__Utop.cmo -c -impl .utop/utop.ml-gen)
+$ (cd _build/default && /Users/armando/.opam/4.11.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -24 -g -o .utop/utop.exe -output-complete-exe /Users/armando/.opam/4.11.0/lib/ocaml/compiler-libs/ocamlcommon.cma /Users/armando/.opam/4.11.0/lib/ocaml/compiler-libs/ocamlbytecomp.cma /Users/armando/.opam/4.11.0/lib/ocaml/compiler-libs/ocamltoplevel.cma /Users/armando/.opam/4.11.0/lib/findlib/findlib.cma /Users/armando/.opam/4.11.0/lib/findlib/findlib_top.cma /Users/armando/.opam/4.11.0/lib/result/result.cma /Users/armando/.opam/4.11.0/lib/lwt/lwt.cma /Users/armando/.opam/4.11.0/lib/ocaml/unix.cma -I /Users/armando/.opam/4.11.0/lib/ocaml /Users/armando/.opam/4.11.0/lib/ocaml/bigarray.cma -I /Users/armando/.opam/4.11.0/lib/ocaml /Users/armando/.opam/4.11.0/lib/mmap/mmap.cma /Users/armando/.opam/4.11.0/lib/ocplib-endian/ocplib_endian.cma /Users/armando/.opam/4.11.0/lib/ocplib-endian/bigstring/ocplib_endian_bigstring.cma /Users/armando/.opam/4.11.0/lib/ocaml/threads/threads.cma -I /Users/armando/.opam/4.11.0/lib/ocaml /Users/armando/.opam/4.11.0/lib/lwt/unix/lwt_unix.cma -I /Users/armando/.opam/4.11.0/lib/lwt/unix /Users/armando/.opam/4.11.0/lib/react/react.cma /Users/armando/.opam/4.11.0/lib/lwt_react/lwt_react.cma /Users/armando/.opam/4.11.0/lib/camomile/default_config/camomileDefaultConfig.cma /Users/armando/.opam/4.11.0/lib/camomile/library/camomileLibrary.cma /Users/armando/.opam/4.11.0/lib/camomile/lib_default/camomileLibraryDefault.cma /Users/armando/.opam/4.11.0/lib/camomile/dyn/camomileLibraryDyn.cma /Users/armando/.opam/4.11.0/lib/camomile/camomile_yuge.cma /Users/armando/.opam/4.11.0/lib/charInfo_width/charInfo_width.cma /Users/armando/.opam/4.11.0/lib/zed/zed.cma /Users/armando/.opam/4.11.0/lib/lwt_log/core/lwt_log_core.cma /Users/armando/.opam/4.11.0/lib/lwt_log/lwt_log.cma /Users/armando/.opam/4.11.0/lib/trie/trie.cma /Users/armando/.opam/4.11.0/lib/mew/mew.cma /Users/armando/.opam/4.11.0/lib/mew_vi/mew_vi.cma /Users/armando/.opam/4.11.0/lib/lambda-term/lambda_term.cma -I /Users/armando/.opam/4.11.0/lib/lambda-term /Users/armando/.opam/4.11.0/lib/utop/uTop.cma src/disc4.cma .utop/.utop.eobjs/byte/dune__exe__Utop.cmo -linkall -warn-error -31)
